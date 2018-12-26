@@ -4,7 +4,7 @@ Department of<br/> Computer Software Engineering
 ------------------------------------------
 
 ##  [김민수](https://github.com/alstn2468)
-## [ [Facebook](https://www.facebook.com/profile.php?id=100003769223078) ] [ [Github](https://github.com/alstn2468) ] [ [LinkedIn](https://www.linkedin.com/in/minsu-kim-336289160/) ] [ [Blog](alstn2468.github.io) ]<br/>
+## [ [Facebook](https://www.facebook.com/profile.php?id=100003769223078) ] [ [Github](https://github.com/alstn2468) ] [ [LinkedIn](https://www.linkedin.com/in/minsu-kim-336289160/) ] [ [Blog](https://alstn2468.github.io/) ]<br/>
 
 [Edwith](https://www.edwith.org)에서 제공하는 HKUST 김성훈 교수님의<br/>
 [머신러닝과 딥러닝 BASIC](https://www.edwith.org/others26/joinLectures/9829)강의를 공부하며 **요약 정리**한 레파지토리 입니다.
