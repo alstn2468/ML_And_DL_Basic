@@ -18,7 +18,8 @@ Department of<br/> Computer Software Engineering
 
 
 #### 머신러닝의 개념과 용어
-- 기본적인 Machine Learnnig 의 용어와 개념 설명
+- 기본적인 Machine Learnnig 의 용어와 개념 설명<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/Chapter_2/1.md)
 - TensorFlow의 설치및 기본적인 operations (new)
 
 
