@@ -25,7 +25,8 @@ Department of<br/> Computer Software Engineering
 
 
 #### Linear Regression 의 개념
-- Linear Regression의 Hypothesis 와 cost
+- Linear Regression의 Hypothesis 와 cost<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_3/1.md)
 - Tensorflow로 간단한 linear regression을 구현 (new)
 
 
