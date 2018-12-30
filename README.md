@@ -32,7 +32,8 @@ Department of<br/> Computer Software Engineering
 
 
 #### Linear Regression cost 함수 최소화
-- Linear Regression의 cost 최소화 알고리즘의 원리
+- Linear Regression의 cost 최소화 알고리즘의 원리<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_4/1.md)
 - Linear Regression 의 cost 최소화의 TensorFlow 구현(new)
 
 
