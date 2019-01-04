@@ -39,7 +39,8 @@ Department of<br/> Computer Software Engineering
 
 
 #### 여러개의 입력(feature)의 Linear Regression
-- multi-variable linear regression (new)
+- multi-variable linear regression (new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_5/1.md)
 - lab 04-1: multi-variable linear regression을 TensorFlow에서 구현하기
 - lab 04-2: TensorFlow로 파일에서 데이타 읽어오기 (new)
 
