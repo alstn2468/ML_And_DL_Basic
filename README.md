@@ -48,7 +48,8 @@ Department of<br/> Computer Software Engineering
 
 
 #### Logistic (Regression) Classification
-- Logistic Classification의 가설 함수 정의
+- Logistic Classification의 가설 함수 정의<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_6/1.md)
 - Logistic Regression의 cost 함수 설명
 - TensorFlow로 Logistic Classification의 구현하기(new)
 
