@@ -52,7 +52,8 @@ Department of<br/> Computer Software Engineering
 [[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_6/1.md)
 - Logistic Regression의 cost 함수 설명<br/>
 [[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_6/2.md)
-- TensorFlow로 Logistic Classification의 구현하기(new)
+- TensorFlow로 Logistic Classification의 구현하기(new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_6/3.md)
 
 
 #### Softmax Regression (Multinomial Logistic Regression)
