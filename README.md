@@ -59,7 +59,8 @@ Department of<br/> Computer Software Engineering
 #### Softmax Regression (Multinomial Logistic Regression)
 - Multinomial 개념 소개<br/>
 [[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_7/1.md)
-- Cost 함수 소개
+- Cost 함수 소개<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_7/2.md)
 - lab 06-1: TensorFlow로 Softmax Classification의 구현하기 (new)
 - lab 06-2: TensorFlow로 Fancy Softmax Classification의 구현하기 (new)
 
