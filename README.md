@@ -68,7 +68,8 @@ Department of<br/> Computer Software Engineering
 
 
 #### ML의 실용과 몇가지 팁
-- 학습 rate, Overfitting, 그리고 일반화 (Regularization)
+- 학습 rate, Overfitting, 그리고 일반화 (Regularization)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_8/1.md)
 - Training/Testing 데이타 셋
 - lab 07-1: training/test dataset, learning rate, normalization (new)
 - lab 07-2: Meet MNIST Dataset (new)
