@@ -70,9 +70,12 @@ Department of<br/> Computer Software Engineering
 #### ML의 실용과 몇가지 팁
 - 학습 rate, Overfitting, 그리고 일반화 (Regularization)<br/>
 [[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_8/1.md)
-- Training/Testing 데이타 셋
-- lab 07-1: training/test dataset, learning rate, normalization (new)
-- lab 07-2: Meet MNIST Dataset (new)
+- Training/Testing 데이타 셋<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_8/2.md)
+- lab 07-1: training/test dataset, learning rate, normalization (new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_8/3.md)
+- lab 07-2: Meet MNIST Dataset (new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_8/4.md)
 
 
 #### 딥러닝의 기본 개념과, 문제, 그리고 해결
