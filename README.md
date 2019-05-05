@@ -79,9 +79,12 @@ Department of<br/> Computer Software Engineering
 
 
 #### 딥러닝의 기본 개념과, 문제, 그리고 해결
-- 딥러닝의 기본 개념: 시작과 XOR 문제
-- 딥러닝의 기본 개념2: Back-propagation 과 2006/2007 ‘딥’의 출현
-- Lab : Tensor Manipulation (new)
+- 딥러닝의 기본 개념: 시작과 XOR 문제<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_9/1.md)
+- 딥러닝의 기본 개념2: Back-propagation 과 2006/2007 ‘딥’의 출현<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_9/2.md)
+- Lab : Tensor Manipulation (new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_9/3.md)
 
 
 #### Neural Network 1: XOR 문제와 학습방법, Backpropagation
