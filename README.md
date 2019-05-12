@@ -88,11 +88,16 @@ Department of<br/> Computer Software Engineering
 
 
 #### Neural Network 1: XOR 문제와 학습방법, Backpropagation
-- XOR 문제 딥러닝으로 풀기
-- 특별편: 10분안에 미분 정리하기
-- 딥넷트웍 학습 시키기 (backpropagation)
-- Lab 9-1: XOR을 위한 텐스플로우 딥넷트웍 (new)
-- Lab 9-2: Tensor Board로 딥네트웍 들여다보기 (new)
+- XOR 문제 딥러닝으로 풀기<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_10/1.md)
+- 특별편: 10분안에 미분 정리하기<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_10/2.md)
+- 딥넷트웍 학습 시키기 (backpropagation)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_10/3.md)
+- Lab 9-1: XOR을 위한 텐스플로우 딥넷트웍 (new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_10/4.md)
+- Lab 9-2: Tensor Board로 딥네트웍 들여다보기 (new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_10/5.md)
 
 
 #### Neural Network 2: ReLU and 초기값 정하기 (2006/2007 breakthrough)
