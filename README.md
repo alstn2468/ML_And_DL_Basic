@@ -101,11 +101,16 @@ Department of<br/> Computer Software Engineering
 
 
 #### Neural Network 2: ReLU and 초기값 정하기 (2006/2007 breakthrough)
-- XSigmoid 보다 ReLU가 더 좋아
-- Weight 초기화 잘해보자
-- Dropout 과 앙상블
-- 레고처럼 넷트웍 모듈을 마음껏 쌓아 보자
-- Lab 10: 딥러닝으로 MNIST 98%이상 해보기(new)
+- XSigmoid 보다 ReLU가 더 좋아<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/1.md)
+- Weight 초기화 잘해보자<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/2.md)
+- Dropout 과 앙상블<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/3.md)
+- 레고처럼 넷트웍 모듈을 마음껏 쌓아 보자<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/4.md)
+- Lab 10: 딥러닝으로 MNIST 98%이상 해보기(new)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/5.md)
 
 
 #### Convolutional Neural Networks
