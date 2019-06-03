@@ -45,7 +45,7 @@ Y = tf.placeholder(tf.float32, [None, 10])
 이것은 전체 네트워크중 몇 퍼센트를 **keep**할 것인지 결정한다.<br/>
 **학습**과정에서는 **0.5 ~ 0.7**정도의 수치를 **keep**하고<br/>
 **테스트**과정에서는 반드시 전체(**1**)를 **keep**해야 한다.<br/>
-
+따라서 **keep_prob**를 `placeholder`로 선언한다.
 
 ```python
 keep_prob = tf.placeholder(tf.float32)
@@ -161,6 +161,8 @@ print(
 
     Accuracy: 0.9813
 
+**Drop out**을 사용한 결과 **97%**의 정확도에서<br/>
+**98%**까지의 정확도 까지 올리는데에 성공하였다.<br/>
 
 ### 임의의 정수 예측하기
 
@@ -194,3 +196,8 @@ plt.show()
 
 
 ![png](12.png)
+
+
+### Optimizer
+여러가지의 **Optimizer**가 존재하지만 여러가지를<br/>
+테스트해서 사용하는 것이 좋지만 통상적으로 **Adam**으로 시작하는것이 좋다.<br/>
