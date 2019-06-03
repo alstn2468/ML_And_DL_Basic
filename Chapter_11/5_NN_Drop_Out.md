@@ -1,5 +1,5 @@
 
-## 깊고 넓은 NN으로 MNIST 학습하기
+## Drop Out을 사용해 MNIST 학습해보기
 
 ### 사용할 모듈 추가
 
@@ -9,6 +9,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import random
 ```
+
 
 
 ### MNIST 데이터 불러오기
@@ -21,7 +22,6 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 ```
 
 
-
 ### 상수 정의
 
 
@@ -29,6 +29,7 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 learning_rate = 0.001
 training_epochs = 15
 batch_size = 100
+total_batch = int(mnist.train.num_examples / batch_size)
 ```
 
 ### 입력값 placeholder 선언
@@ -39,9 +40,19 @@ X = tf.placeholder(tf.float32, [None, 784])
 Y = tf.placeholder(tf.float32, [None, 10])
 ```
 
-### 깊고 넓은 Neural Network 구성하기
-**Xavier Initialization**사용<br/>
-5개의 Layer를 사용하는 Neural Network구성
+### keep_prob 선언
+`tensorflow 1.0`부터는 **keep_prob**를 사용한다.<br/>
+이것은 전체 네트워크중 몇 퍼센트를 **keep**할 것인지 결정한다.<br/>
+**학습**과정에서는 **0.5 ~ 0.7**정도의 수치를 **keep**하고<br/>
+**테스트**과정에서는 반드시 전체(**1**)를 **keep**해야 한다.<br/>
+
+
+```python
+keep_prob = tf.placeholder(tf.float32)
+```
+
+### Neural Network Layer 구성
+**Drop Out**을 사용할 하나의 Layer를 추가로 구성하면 된다.<br/>
 
 
 ```python
@@ -49,21 +60,25 @@ W1 = tf.get_variable("W1", shape=[784, 512],
                      initializer=tf.contrib.layers.xavier_initializer())
 b1 = tf.Variable(tf.random_normal([512]))
 L1 = tf.nn.relu(tf.matmul(X, W1) + b1)
+L1 = tf.nn.dropout(L1, keep_prob=keep_prob)
 
 W2 = tf.get_variable("W2", shape=[512, 512],
                      initializer=tf.contrib.layers.xavier_initializer())
 b2 = tf.Variable(tf.random_normal([512]))
 L2 = tf.nn.relu(tf.matmul(L1, W2) + b2)
+L2 = tf.nn.dropout(L2, keep_prob=keep_prob)
 
 W3 = tf.get_variable("W3", shape=[512, 512],
                      initializer=tf.contrib.layers.xavier_initializer())
 b3 = tf.Variable(tf.random_normal([512]))
 L3 = tf.nn.relu(tf.matmul(L2, W3) + b3)
+L3 = tf.nn.dropout(L3, keep_prob=keep_prob)
 
 W4 = tf.get_variable("W4", shape=[512, 512],
                      initializer=tf.contrib.layers.xavier_initializer())
 b4 = tf.Variable(tf.random_normal([512]))
 L4 = tf.nn.relu(tf.matmul(L3, W4) + b4)
+L4 = tf.nn.dropout(L4, keep_prob=keep_prob)
 
 W5 = tf.get_variable("W5", shape=[512, 10],
                      initializer=tf.contrib.layers.xavier_initializer())
@@ -95,11 +110,10 @@ sess.run(tf.global_variables_initializer())
 ```python
 for epoch in range(training_epochs):
     avg_cost = 0
-    total_batch = int(mnist.train.num_examples / batch_size)
 
     for i in range(total_batch):
         batch_xs, batch_ys = mnist.train.next_batch(batch_size)
-        feed_dict = {X: batch_xs, Y: batch_ys}
+        feed_dict = {X: batch_xs, Y: batch_ys, keep_prob: 0.7}
         c, _ = sess.run([cost, optimizer], feed_dict=feed_dict)
         avg_cost += c / total_batch
 
@@ -108,21 +122,21 @@ for epoch in range(training_epochs):
 print('Learning Finished!')
 ```
 
-    Epoch: 0001 cost = 0.291983139
-    Epoch: 0002 cost = 0.104170327
-    Epoch: 0003 cost = 0.070643487
-    Epoch: 0004 cost = 0.050214080
-    Epoch: 0005 cost = 0.040219263
-    Epoch: 0006 cost = 0.034975592
-    Epoch: 0007 cost = 0.030978311
-    Epoch: 0008 cost = 0.025430245
-    Epoch: 0009 cost = 0.026338585
-    Epoch: 0010 cost = 0.020523844
-    Epoch: 0011 cost = 0.017850943
-    Epoch: 0012 cost = 0.016786734
-    Epoch: 0013 cost = 0.016248527
-    Epoch: 0014 cost = 0.017074123
-    Epoch: 0015 cost = 0.011885058
+    Epoch: 0001 cost = 0.468633001
+    Epoch: 0002 cost = 0.170478383
+    Epoch: 0003 cost = 0.131077586
+    Epoch: 0004 cost = 0.108677959
+    Epoch: 0005 cost = 0.096312569
+    Epoch: 0006 cost = 0.082181592
+    Epoch: 0007 cost = 0.078254419
+    Epoch: 0008 cost = 0.069326370
+    Epoch: 0009 cost = 0.062080975
+    Epoch: 0010 cost = 0.055655396
+    Epoch: 0011 cost = 0.057310239
+    Epoch: 0012 cost = 0.055785087
+    Epoch: 0013 cost = 0.052270090
+    Epoch: 0014 cost = 0.048582647
+    Epoch: 0015 cost = 0.044075073
     Learning Finished!
 
 
@@ -135,17 +149,17 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 print(
     'Accuracy:', 
     sess.run(
-        accuracy, feed_dict={X: mnist.test.images, Y: mnist.test.labels}
+        accuracy, 
+        feed_dict={
+            X: mnist.test.images, 
+            Y: mnist.test.labels, 
+            keep_prob: 1
+        }
     )
 )
 ```
 
-    Accuracy: 0.9731
-    
-**Xavier Initialization**를 사용해 더 **Deep**하게<br/>
-**Neural Network**를 구성하였음에도 불구하고 정확도는<br/>
-이전 게시글에서 작성한 것보다 낮게 나왔다.<br/>
-이는 아마도 **Overfitting**이 발생한 상황으로 추측이 된다.<br/>
+    Accuracy: 0.9813
 
 
 ### 임의의 정수 예측하기
@@ -157,13 +171,14 @@ print("Label: ", sess.run(tf.argmax(mnist.test.labels[r:r+1], 1)))
 print(
     "Prediction: ", 
     sess.run(
-        tf.argmax(hypothesis, 1), feed_dict={X: mnist.test.images[r:r+1]}
+        tf.argmax(hypothesis, 1), 
+        feed_dict={X: mnist.test.images[r:r+1], keep_prob:1}
     )
 )
 ```
 
-    Label:  [3]
-    Prediction:  [3]
+    Label:  [6]
+    Prediction:  [6]
 
 
 ### 예측한 정수 그리기
@@ -178,4 +193,4 @@ plt.show()
 ```
 
 
-![png](9.png)
+![png](12.png)
