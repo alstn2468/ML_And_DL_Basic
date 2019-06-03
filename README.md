@@ -110,7 +110,8 @@ Department of<br/> Computer Software Engineering
 - 레고처럼 넷트웍 모듈을 마음껏 쌓아 보자<br/>
 [[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/4.md)
 - Lab 10: 딥러닝으로 MNIST 98%이상 해보기(new)<br/>
-[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/5.md)
+[[Neural Network]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/5_NN.md)[[Xavier Initializer]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/5_NN_Xavier_Initializer.md)[[Deep Neural Network]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/5_NN_Deep.md)[[Drop Out]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_11/5_NN_Drop_Out.md)
+
 
 
 #### Convolutional Neural Networks
