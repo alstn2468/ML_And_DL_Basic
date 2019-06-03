@@ -115,11 +115,16 @@ Department of<br/> Computer Software Engineering
 
 
 #### Convolutional Neural Networks
-- ConvNet의 Conv 레이어 만들기
-- ConvNet Max pooling 과 Full Network
-- Google Cloud ML with Examples 1
-- ConvNet의 활용 예
-- Lab 11 : ConvNet을 TensorFlow로 구현하자 (MNIST 99%)
+- ConvNet의 Conv 레이어 만들기<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_12/1.md)
+- ConvNet Max pooling 과 Full Network<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_12/2.md)
+- Google Cloud ML with Examples 1<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_12/3.md)
+- ConvNet의 활용 예<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_12/4.md)
+- Lab 11 : ConvNet을 TensorFlow로 구현하자 (MNIST 99%)<br/>
+[[Summary]](https://github.com/alstn2468/ML_And_DL_Basic/blob/master/Chapter_12/5.md)
 
 
 #### Recurrent Neural Network
